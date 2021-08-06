@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar - Hotel Bastille</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Fondo -->
+  <header class="fondoReservas transparent">
+    <h1 class="hotelTitulo"> HOTEL BASTILLE, HOTEL EN BUENOS AIRES</h1>
+
+<!-- NavBar -->
+<nav class="navbar lia navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+  <a class="navbar-brand " href="#"></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="fondoBlanco  navbar-nav">
+<ul> 
+    <li><a  href="index.html">HOME</a></li>
+<li><a href="gastronomia.html">GASTRONOMÍA</a></li>
+<li>    <a href="eventos.html">EVENTOS</a>    </li>
+<li>    <a href="galeria.html">GALERÍA</a>    </li>
+<li>    <a class="reservasLink" href="reservar.html">RESERVAR</a>    </li>
+</ul>
+</div>
+</div>
+</div>
+</nav> 
+</header>
+<!-- Contenido -->
+<div>
+    <h2 class="subHome">RESERVA</h2>
+
+    <form class="row g-4 needs-validation reservas" validate>
+      <div class="col-md-3">
+        <label for="validationCustom01" class="form-label">Ingrese Nombre</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="valid-feedback">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom02" class="form-label">Ingrese Apellido</label>
+        <input type="text" class="form-control" id="validationCustom02" value="" required>
+        <div class="valid-feedback">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustomUsername" class="form-label">Ingrese teléfono</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">011</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Por favor, ingrese un número de teléfono.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom03" class="form-label">Ciudad, país</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Por favor, ingrese su ciudad y país.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Dias de reserva</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Elegí...</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+        </select>
+        <div class="invalid-feedback">
+          Por favor, ingresa dias de reserva.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom05" class="form-label">Ingresa Email</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Por favor, ingresa un email
+        </div>
+      </div>
+
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-primary probando">Standard</button>
+          <button type="button" class="btn btn-primary probando">Premium</button>
+          <button type="button" class="btn btn-primary probando">Exclusive</button>
+          <button type="button" class="btn btn-primary probando">Suites</button>
+        </div> 
+      </div>
+      
+      
+<label for="start" >Fecha de reserva:</label>
+<input class="col-6 tipoReserva" type="date" id="start" name="trip-start"
+       value="2021-07-05"
+       min="2021-07-05" max="2025-12-31">
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Acepto términos y condiciones.
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Reservar</button>
+      </div>
+    </form>
+</div>
+<!-- Footer -->
+<footer>
+
+  <div class="container-footer-all">
+
+    <div class="container-body">
+
+        <div class="colum1">
+            <h1>Protocolos Covid-19</h1>
+
+            <p>En Hotel Bastille la seguridad y el bienestar de nuestros huéspedes, clientes y asociados siempre es prioridad. La pandemia de Covid-19 ha requerido de nosotros elevar nuestros estándares a un nivel aún más alto. Para tal fin, hemos revisado profundamente nuestros procedimientos de limpieza y seguridad y hemos elaborado nuevos protocolos que se adaptan a las circunstancias actuales, impuestas por este nuevo orden mundial.
+          
+            </p>
+
+        </div>
+
+        <div class="colum2">
+
+            <h1>Redes Sociales</h1>
+
+            <div class="row">
+              <img class="imgFooter" src="img/facebook-min.png">
+               <label><a class="linkFooter footerColor" href="http://www.facebook.com">Seguinos en Facebook</a></label>
+          </div>
+          <div class="row">
+              <img class="imgFooter" src="img/twitter-min.png">
+              <label><a class="linkFooter footerColor" href="http://www.twitter.com">Seguinos en Twitter</a></label>
+            </div>
+          <div class="row">
+              <img class="imgFooter" src="img/instagram-min.png">
+              <label><a class="linkFooter footerColor" href="http://www.instagram.com">Seguinos en Instagram</a></label>
+            </div>
+          <div class="row">
+              <img class="imgFooter" src="img/tripadvisor.jpg">
+              <label><a class="linkFooter footerColor" href="http://www.tripadvisor.com">Seguinos en Trip Advisor</a></label>
+            </div>
+
+
+        </div>
+
+        <div class="colum3">
+
+            <h1>Informacion Contactos</h1>
+
+            <div class="row2">
+                <img class="imgFooter2" src="img/house-min.png">
+                <label class="colorContact">Avenida Córdoba 2000, Capital Federal, Buenos Aires. 
+              
+              
+              </label>
+            </div>
+
+            <div class="row2">
+                <img class="imgFooter2" src="img/smartphone-min.png">
+                <label class="colorContact">011-4302-5522</label>
+            </div>
+
+            <div class="row2">
+                <img class="imgFooter2" src="img/contact-min.png">
+                 <label class="colorContact">hotelbastille@reservar.com</label>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-footer">
+       <div class="footer">
+            <div class="copyright">
+                © 2021 Todos los Derechos Reservados | <a class="linkFooter" href="">Bastille</a>
+            </div>
+
+            <div class="information">
+                <a class="linkFooter" href="">Información Compañía</a> | <a class="linkFooter" href="">Privación y Política</a> | <a class="linkFooter" href="">Términos y Condiciones</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- JavaScript -->
+<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
