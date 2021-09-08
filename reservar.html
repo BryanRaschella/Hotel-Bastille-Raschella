@@ -45,13 +45,13 @@
 
     <form class="row g-4 needs-validation reservas" validate>
       <div class="col-md-3">
-        <label for="validationCustom01" class="form-label">Ingrese Nombre</label>
+        <label for="validationCustom01" class="form-label" id="ingreseNombre">Ingrese Nombre</label>
         <input type="text" class="form-control" id="validationCustom01" value="" required>
         <div class="valid-feedback">
         </div>
       </div>
       <div class="col-md-3">
-        <label for="validationCustom02" class="form-label">Ingrese Apellido</label>
+        <label for="validationCustom02" class="form-label" id="ingreseApellido">Ingrese Apellido</label>
         <input type="text" class="form-control" id="validationCustom02" value="" required>
         <div class="valid-feedback">
         </div>
@@ -131,7 +131,7 @@
         </div>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">Reservar</button>
+        <button class="btn btn-primary" id="btnReserva" type="submit">Reservar</button>
       </div>
     </form>
 </div>
@@ -217,9 +217,12 @@
     </div>
 </footer>
 <!-- JavaScript -->
+<script src="./Java/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
