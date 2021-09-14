@@ -60,3 +60,23 @@ function respuestaClick (){
 //{ 
   //  console.log (this);
 //});
+
+
+$("body").prepend("<h1 class='hotelTitulo'> HOTEL BASTILLE, HOTEL EN BUENOS AIRES</h1>");
+
+$("h1").fadeIn(2000, () =>
+  $("h1").fadeOut(2000, () =>
+    $("body").prepend("<h1 class='hotelTitulo'> HOTEL BASTILLE, HOTEL EN BUENOS AIRES</h1>"),
+
+  )
+)
+;
+
+
+$("body").prepend("<img src='img/eventos 1-min.jpg' class='card-img-bottom slide-in-left' alt='...'>");
+$("img").fadeIn(2000, () =>
+$("img").fadeOut(2000, () =>
+$("body").prepend("<img src='img/eventos 1-min.jpg' class='card-img-bottom slide-in-left' alt='...'>"),
+)
+)
+;
