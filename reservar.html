@@ -7,6 +7,7 @@
     <title>Reservar - Hotel Bastille</title>
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Google Fonts -->
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
@@ -28,10 +29,10 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="fondoBlanco  navbar-nav">
 <ul> 
-    <li><a  href="index.html">HOME</a></li>
-<li><a href="gastronomia.html">GASTRONOMÍA</a></li>
-<li>    <a href="eventos.html">EVENTOS</a>    </li>
-<li>    <a href="galeria.html">GALERÍA</a>    </li>
+    <li><a class="reservasLink" href="index.html">HOME</a></li>
+<li><a class="reservasLink" href="gastronomia.html">GASTRONOMÍA</a></li>
+<li>    <a class="reservasLink" href="eventos.html">EVENTOS</a>    </li>
+<li>    <a class="reservasLink" href="galeria.html">GALERÍA</a>    </li>
 <li>    <a class="reservasLink" href="reservar.html">RESERVAR</a>    </li>
 </ul>
 </div>
@@ -42,10 +43,12 @@
 <!-- Contenido -->
 <div>
     <h2 class="subHome">RESERVA</h2>
+    <!--
 
-    <form class="row g-4 needs-validation reservas" validate>
-      <div class="col-md-3">
-        <label for="validationCustom01" class="form-label" id="ingreseNombre">Ingrese Nombre</label>
+
+    <form class="row g-4 needs-validation reservas formulario" id="formulario">
+      <div class="col-md-3 formulario__grupo" >
+        <label for="validationCustom01" class="form-label" name="nombre" id="nombre">Ingrese Nombre</label>
         <input type="text" class="form-control" id="validationCustom01" value="" required>
         <div class="valid-feedback">
         </div>
@@ -103,18 +106,7 @@
         <div class="invalid-feedback">
           Por favor, ingresa un email
         </div>
-      </div>
-
-      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group me-2" role="group" aria-label="First group">
-          <button type="button" class="btn btn-primary standard probando">Standard</button>
-          <button type="button" class="btn btn-primary premium probando">Premium</button>
-          <button type="button" class="btn btn-primary exclusive probando">Exclusive</button>
-          <button type="button" class="btn btn-primary suites probando">Suites</button>
-        </div> 
-      </div>
-      
-      
+      </div>      
 <label for="start" >Fecha de reserva:</label>
 <input class="col-6 tipoReserva" type="date" id="start" name="trip-start"
        value="2021-07-05"
@@ -133,8 +125,63 @@
       <div class="col-12">
         <button class="btn btn-primary" id="btnReserva" type="submit">Reservar</button>
       </div>
-    </form>
-</div>
+    </form>--> 
+    
+      <form class="row g-4 needs-validation reservas formulario" id="formulario">
+        <div class="col-md-4 formulario__grupo" >
+          <label for="validationCustom01" class="form-label" name="nombre" id="nombre">Ingrese Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label" id="ingreseApellido">Ingrese Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Ingrese teléfono</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">011</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor, ingrese un número de teléfono.
+            </div>
+          </div>
+        </div>
+  
+      <div>
+
+        <div class="row" style="text-align: center;">
+            <div class="column">
+                <h3>Seleccione los productos a comprar:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" id="notificaciones" style="text-align: center;">
+                <h6>Producto elegido: </h6>
+            </div>
+        </div>
+        <div class="row">
+            <div id="contenidoGenerado" class="column">
+            </div>
+
+            <div id="carrito" style="display: none;" class="column column-20">
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row" id="titulo2">
+            <div class="column column-20">
+                <button class="btn btn-primary" type="submit" id="enviarPost">Reservar</button>
+            </div>
+    </div>
+      </div>
+    </div>
+  </form>
 <!-- Footer -->
 <footer>
 
@@ -217,9 +264,10 @@
     </div>
 </footer>
 <!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="./Java/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="/Java/main.js"></script>
 <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

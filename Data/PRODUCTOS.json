@@ -1,0 +1,5 @@
+[{"id": 1,"descripcion": "Paquete Standard ","imagen": "https://www.cadenadial.com/wp-content/uploads/2018/05/tucuman-center-hotel.jpg","precio": 3000},
+{"id": 2,"descripcion": "Paquete Premium ","imagen": "http://alvearpalace.com/files/galeria/items/thumbs/bao-suite-lounge-galerias-website.jpg","precio": 5000},
+{"id": 3,"descripcion": "Paquete Ejecutivo","imagen": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/habitacion-hotel-revolve2-1546271048.jpeg","precio": 10000},
+{"id": 4, "descripcion": "Paquete Suite", "imagen": "https://www.cosemarozono.com/wp-content/uploads/2017/02/eliminar-olores-en-habitaciones-de-hotel-con-ozono.jpg", "precio":22000},
+{"id": 5, "descripcion": "Paquete Presidencial", "imagen": "https://wallpaperstock.net/wallpapers/thumbs1/57186wide.jpg", "precio":50000}]

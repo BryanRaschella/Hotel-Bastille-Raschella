@@ -412,3 +412,39 @@ text-decoration: none;}
 .footerColor:hover { 
   color: #e3cf9d;
 }
+
+button { color:black;
+  background-color: #d3ae50;
+  font-size: 20px;
+  transition-duration: 0.4s;} /** Agregamos una transición cuando se pare en el botón**/
+
+
+#carrito{
+  color: rgba(104, 102, 1, 0.61);
+  text-align: center;
+}
+
+.carritoSVG{
+  height: 25px;
+  width: 25px;
+}
+
+#notificaciones{
+  position: fixed;
+  left: 0;
+  top: 40%;
+  width: 10em;
+  margin-top: 0;
+}
+
+#enviarPost {
+  margin-left: 580px;
+  font-size: 30px;
+  background-color: #d3ae50;
+  color: #101010;
+}
+
+h4 { 
+  color: #d3ae50;
+  font-family: 'Kurale', serif;
+}
